@@ -159,7 +159,7 @@ $(document).ready(function () {
     let row11amSaveBtn = document.querySelector('#hour2');
     
     // Displays any user input data already saved
-    row10amInput.value = localStorage.getItem('stored2');
+    row11amInput.value = localStorage.getItem('stored2');
 
     // Save button clicks and stores the user input data
     hour2.addEventListener('click', userDataStore2);
