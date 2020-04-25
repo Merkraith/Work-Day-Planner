@@ -37,7 +37,7 @@ textarea{
   border-top: 1px solid white;;
 }
 
-.timecol {
+.time-block {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
@@ -64,7 +64,7 @@ textarea{
   color: white;
 }
 
-.btn.btn-primary.saveBtn {
+.saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -72,8 +72,10 @@ textarea{
   color: white;
 }
 
-.noteinput {
-  background-color: lime;
+.note-input {
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  background-color: #77dd77;
   padding-bottom: 5px;
   padding-top: 5px;
 }

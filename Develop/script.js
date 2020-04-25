@@ -6,26 +6,21 @@ $(document).ready(function () {
     // display current day 
     $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
-    let storedItem ;
+
 
     for (i = 0; i < workHours.length; i++) {
         console.log(workHours[i])
-        let row = $("<div>").addClass("row")
-        let timeCol = $("<text-area>").addClass("col-2 timecol").text(workHours[i]);
-        let inputCol = $("<input>").attr("placeholder", "Enter note here").addClass("col-8 noteinput");
-        let saveBtn = $("<button>").addClass("col-2 btn btn-primary saveBtn").text("save");
-        $("#daily-planner").append(row)
-        $(".row").append(timeCol).append(inputCol).append(saveBtn);
-       
+        $(`<div class="col-2 time-block"></div>`).text(workHours[i]).appendTo(".row");
+        $(`<textarea class="col-8 note-input" id="input-${i}"></textarea>`).attr("placeholder", "Enter note here").appendTo(".row");
+        $(`<button class="col-2 btn btn-primary saveBtn" id="hour-${i}"></button>`).text("save").appendTo(".row");
     }
-    let saveBtn = $(".saveBtn");
-    
-    $(saveBtn).on("click", function (event) {
+
+    $(".saveBtn").on("click", function (event) {
         event.preventDefault();
-        let toDo = $(".noteInput").val().trim();
-        localStorage.setItem("storedItem", JSON.stringify(toDo)) 
-        console.log(localStorage.getItem("storedItem"));
+        let userInput = $(".note-input").val().trim();
+        let storedItem = $(this).attr("id");
+        localStorage.setItem(storedItem, JSON.stringify(userInput))
+        console.log(localStorage.getItem(storedItem));
+        console.log($(this).attr("id"));
     });
 })
-
-
