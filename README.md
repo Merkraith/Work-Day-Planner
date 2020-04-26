@@ -1,13 +1,13 @@
 **# Work-Day-Planner**
 
 
-**##Introduction**
+**## Introduction**
 
 My project here is a Work-Day Planner that allows the user to write notes for each hour of the work day, to help manage their time.
 
 It's a simple application that can save the use of paper memos on a daily basis and help keep one more organized with daily work tasks.
 
-**##Instructions and Features**
+**## Instructions and Features**
 
 To use this planner, all you need is to visit the link (see below) and view it on your browser.  It will be different for every user because the notes you save, save to your "Local Storage" in your devices browser.  
 
@@ -17,7 +17,7 @@ The planner also tracks in real time thanks to an api from "moment.js".  When th
 
 While an hour is active in real time, the text field will be displayed in the color **RED**. Once an hour has passed it will be displayed in the color **GRAY**.  Hours that have not happened yet will display in the color **GREEN**.
 
-**##Links**
+**## Links**
 
 https://github.com/Merkraith/Work-Day-Planner - Github Page
 
