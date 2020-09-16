@@ -17,6 +17,10 @@ The planner also tracks in real time thanks to an api from "moment.js".  When th
 
 While an hour is active in real time, the text field will be displayed in the color **RED**. Once an hour has passed it will be displayed in the color **GRAY**.  Hours that have not happened yet will display in the color **GREEN**.
 
+## Screenshots
+
+![workdayplanner](/workdayplanner.jpg)
+
 ## Links
 
 https://github.com/Merkraith/Work-Day-Planner - Github Page
