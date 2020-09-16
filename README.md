@@ -30,3 +30,10 @@ https://merkraith.github.io/Work-Day-Planner/ - Published Page
 https://momentjs.com/ - Moment.js
 
 
+# Author: Merkraith
+
+mark.heil122@gmail.com
+
+![alt text](https://github.com/Merkraith.png)
+
+
